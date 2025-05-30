@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog or Cat API</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="name">Cão ou Gato? </label>
+        <select name="animal" id="animal">
+        <option value="" selected disabled>Selecione</option>
+        <option id="dog" value="dog">Cão</option>
+        <option id="cat" value="cat">Gato</option>
+      </div>
+      <div>
+        <input id="submit" type="submit" value="Mostrar foto" />
+      </div>
+    </form>
+    <div id="photo">
+      <img id="animal-photo" src="" alt="Animal" />
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
