@@ -1,0 +1,78 @@
+body {
+    min-height: 100vh;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    background: #fff;
+    padding: 32px 0 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+form select {
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccd9f0;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+form select:focus {
+    border: 1.5px solid #3a6dc7;
+    background: #f8faff;
+    color: #111;
+    box-shadow: 0 0 0 2px rgba(0,153,204,0.15);
+}
+
+form input[type="submit"] {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-left: 18px;
+    background: #0099cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background: #036b8d;
+}
+
+#photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+#animal-photo {
+    transition: 0.6s;
+    max-width: 90vw;
+    max-height: 70vh;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+#animal-photo:hover {
+    scale: 1.05;
+    transition: 0.8s;
+}
