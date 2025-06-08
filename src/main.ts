@@ -1,11 +1,12 @@
 import './assets/styles/index.css';
 import loading from './assets/images/loading.gif';
+import logo from './assets/images/catDog.png';
 
 const animal = document.querySelector<HTMLInputElement>('#animal')!;
 const submit = document.querySelector<HTMLButtonElement>('#submit')!;
 const photo = document.querySelector<HTMLImageElement>('#animal-photo')!;
 
-photo.src = `${loading}`;
+photo.src = `${logo}`;
 
 submit.addEventListener('click', async (event) => {
   event.preventDefault();
@@ -22,7 +23,7 @@ submit.addEventListener('click', async (event) => {
     photo.src = `${await getCat()}`;
   }
   if(animal.value !== 'dog' && animal.value !== 'cat') {
-    alert('Por favor, ecolha entre "cachorro" ou "gato"');
+    alert('Por favor, ecolha entre "cão" ou "gato"');
     return;
   }
 
