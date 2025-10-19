@@ -29,6 +29,7 @@ submit.addEventListener('click', async (event) => {
 
 });
 
+
 async function getDog(){
   const response = await fetch(`https://api.thedogapi.com/v1/images/search`);
   const data = await response.json();
