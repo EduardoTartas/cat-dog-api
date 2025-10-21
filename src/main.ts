@@ -1,4 +1,4 @@
-import './assets/styles/index.css';
+ import './assets/styles/index.css'; 
 import loading from './assets/images/loading.gif';
 import logo from './assets/images/catDog.png';
 
